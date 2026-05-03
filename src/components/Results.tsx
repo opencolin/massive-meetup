@@ -167,7 +167,7 @@ export function Results({ result }: { result: SearchResult }) {
       <details className="text-xs text-zinc-500">
         <summary className="cursor-pointer">Search log ({result.log.length} events)</summary>
         <pre className="mt-2 max-h-80 overflow-auto rounded-md bg-zinc-50 dark:bg-zinc-900 p-3 leading-relaxed">
-          {result.log.map((e, i) => `[${e.phase}] ${e.message}`).join("\n")}
+          {result.log.map((e) => `[${e.phase}] ${e.message}`).join("\n")}
         </pre>
       </details>
     </section>
